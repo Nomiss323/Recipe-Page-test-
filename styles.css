@@ -35,7 +35,7 @@ body{
     height: auto;
     width: 250px;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
 
 }
 
@@ -88,7 +88,7 @@ body{
 
 }
 
-.lst1 {
+.lst1, .lst2 {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -96,22 +96,50 @@ body{
     padding: 0%;
     margin-left: 18px;
     font-size: 7px;
-    
+    font-family: var(--bd-ft);
 }
 
 
 
-.dot {
+.dot, .dot2 {
     color: var(hd);
     display: flex; 
     align-items: center;
     padding: 0%;
-    margin-left: -2%;
 
 }
-  
+
+.dot{
+    margin-left: -2%;
+}
+
+
   .dot::before {
       content: '•';;
       margin-right: 12px;
+
 }
 
+
+
+
+
+.hdlst {
+    font-family: var(--hd-ft);
+    font-size: 10px;
+    color: var(--hd-br);
+    margin-bottom: 2px;
+
+}
+
+.dot2 {
+    margin-left: -6%;
+    color: var(--hd-br);
+
+}
+  
+  .dot2::before {
+      content: '•';;
+      margin-right: 12px;
+
+}
